@@ -2,18 +2,40 @@
   .container {
     max-width: 426px;
   }
-  .title-features {
-    font-weight: var(--weight700);
+  .social-link-mob {
+    flex-basis: calc((100% - 3 * 56px) / 4);
   }
-
-  .text-features {
-    font-weight: 500;
+  .mob-tel-link {
+    font-size: 36px;
+    font-weight: 700;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 766px;
+  }
+  .section-solution {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-tab.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-solution {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-tab-2x.jpg);
+    }
+  }
+  .text-solution {
+    font-size: 56px;
+    margin-bottom: 36px;
   }
   .features-list {
     gap: 72px 24px;
@@ -27,13 +49,45 @@
   .text-features {
     font-weight: 500;
   }
+  .team-list {
+    gap: 64px 24px;
+  }
+  .customers-list {
+    gap: 72px 24px;
+  }
+  .customers-icon-list {
+    flex-basis: calc((100% - 48px) / 3);
+  }
 }
 @media screen and (min-width: 1140px) {
   .container {
     max-width: 1140px;
   }
+  .section-solution {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-solution {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-2x.jpg);
+    }
+  }
+  .text-solution {
+    font-size: 56px;
+    line-height: 1.07;
+    padding-bottom: 48px;
+  }
   .section-features {
-      padding: 120px;
+    padding: 120px;
   }
   .title-features {
     font-size: 20px;
@@ -55,5 +109,23 @@
   }
   .section-doing {
     display: flex;
+  }
+  .team-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+    padding-bottom: 120px;
+  }
+  .title-team {
+    padding-top: 120px;
+  }
+  .title-customers {
+    padding-top: 120px;
+  }
+  .customers-list {
+    padding-bottom: 120px;
+    gap: 24px;
+  }
+  .customers-icon-list {
+    flex-basis: calc((100% - 120px) / 6);
   }
 }

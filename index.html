@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="description" content="Effective Solutions for Your Business" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,12 +24,46 @@
   </head>
   <body>
     <!-- <header class="page-header">
+              <div class="container">
+                <nav class="page-nav">
+                  <a class="logo link" href="./index.html"
+                    >Web<span class="link-logo-web">Studio</span></a
+                  >
+                  <ul class="list">
+                    <li class="menu-link">
+                      <a class="page-link-menu link" href="./index.html"> Studio</a>
+                    </li>
+                    <li class="menu-link">
+                      <a class="page-link link" href="./portfolio.html"> Portfolio</a>
+                    </li>
+                    <li class="menu-link">
+                      <a class="page-link link" href=""> Contacts</a>
+                    </li>
+                  </ul>
+                </nav>
+                <address class="contacts">
+                  <ul class="list">
+                    <li>
+                      <a class="page-link link" href="mailto:info@devstudio.com"
+                        >info@devstudio.com</a
+                      >
+                    </li>
+                    <li>
+                      <a class="page-link link" href="tel:+110001111111"
+                        >+11 (000) 111-11-11</a
+                      >
+                    </li>
+                  </ul>
+                </address>
+              </div>
+            </header> -->
+    <header class="page-header">
       <div class="container">
         <nav class="page-nav">
           <a class="logo link" href="./index.html"
             >Web<span class="link-logo-web">Studio</span></a
           >
-          <ul class="list">
+          <ul class="menu-list list">
             <li class="menu-link">
               <a class="page-link-menu link" href="./index.html"> Studio</a>
             </li>
@@ -55,17 +89,95 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="menu-open-btn" data-menu-open>
+          <svg class="menu-open-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden" data-menu>
+        <div>
+          <button
+            type="button"
+            class="menu-close-btn button-close"
+            data-menu-close
+          >
+            <svg class="close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-Vector"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-page">
+              <a class="mob-menu-link link" href="./index.html"> Studio</a>
+            </li>
+            <li class="mob-menu-page">
+              <a class="mob-menu-link link" href="./portfolio.html"> Portfolio</a>
+            </li>
+            <li class="mob-menu-page">
+              <a class="mob-menu-link link" href=""> Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <address class="mob-contacts">
+            <ul class="mob-contacts-list list">
+              <li>
+                <a class="mob-tel-link link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a class="mob-mail-link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="socialmob-link-list">
+            <li class="social-link-mob">
+              <a class="social-link-icon" href="">
+                <svg class="team-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-link-mob">
+              <a class="social-link-icon" href="">
+                <svg class="team-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-link-mob">
+              <a class="social-link-icon" href="">
+                <svg class="team-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-link-mob">
+              <a class="social-link-icon" href="">
+                <svg class="team-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main>
-      <!-- <section class="section-solution">
+      <section class="section-solution">
         <div class="container">
-          <h1 class="text-solution">Effective Solutions for Your Business</h1>
+          <h1 class="text-solution">
+            Effective Solutions <br />
+            for Your Business
+          </h1>
           <button type="button" class="button-service" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
       <section class="section-features">
         <div class="container">
           <h2 class="visually-hidden">features</h2>
@@ -152,11 +264,11 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="section-team">
+      <section class="section-team">
         <div class="container">
           <h2 class="title-team">Our Team</h2>
-          <ul class="list">
-            <li class="team-list">
+          <ul class="team-list list">
+            <li class="team-item">
               <img
                 class="team-img"
                 src="./images/TeamCard1.jpg"
@@ -199,7 +311,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-list">
+            <li class="team-item">
               <img
                 class="team-img"
                 src="./images/TeamCard2.jpg"
@@ -242,7 +354,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-list">
+            <li class="team-item">
               <img
                 class="team-img"
                 src="./images/TeamCard3.jpg"
@@ -285,7 +397,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-list">
+            <li class="team-item">
               <img
                 class="team-img"
                 src="./images/TeamCard4.jpg"
@@ -330,11 +442,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="section-customers">
+      </section>
+      <section class="section-customers">
         <div class="container">
           <h2 class="title-customers">Customers</h2>
-          <ul class="list">
+          <ul class="customers-list">
             <li class="customers-icon-list">
               <a class="customers-icon-link" href="">
                 <svg class="customer-icon" width="104" height="56">
@@ -379,7 +491,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- <footer class="footer-info">
       <div class="container">
@@ -505,7 +617,8 @@
               name="user-comment"
               id="user-comment"
               class="modal-comment"
-              placeholder="Text input"></textarea>
+              placeholder="Text input"
+            ></textarea>
           </div>
           <div class="modal-policy">
             <input
@@ -532,5 +645,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
