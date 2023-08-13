@@ -9,11 +9,30 @@
     font-size: 36px;
     font-weight: 700;
   }
+  .form-input {
+    min-width: 398px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 766px;
+  }
+  .menu-open-btn {
+    display: none;
+  }
+  .page-nav .list {
+    display: flex;
+  }
+  .contacts {
+    display: flex;
+  }
+  .contacts-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .menu-list {
+    margin-left: 120px;
   }
   .section-solution {
     background-image: linear-gradient(
@@ -58,10 +77,65 @@
   .customers-icon-list {
     flex-basis: calc((100% - 48px) / 3);
   }
+  .footer-info .logo {
+    margin: 0;
+  }
+  .form-mail {
+    position: relative;
+  }
+  .form-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 420px;
+  }
+  .footer-social-media {
+    margin: 0;
+    align-items: start;
+  }
+  .footer-logo-text {
+    padding-top: 0;
+    align-items: start;
+  }
+  .logo-social-media {
+    padding-top: 98px;
+    display: flex;
+    gap: 24px;
+    padding-left: 108px;
+  }
+.mail-subscribe {
+  padding-left: 108px;
+  margin-top: 112px;
+  padding-bottom: 96px;
+  align-items: start;
+}
 }
 @media screen and (min-width: 1140px) {
   .container {
     max-width: 1140px;
+  }
+  .logo {
+    margin-right: 76px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .menu-list {
+    margin-left: 0;
+  }
+  .contacts-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .contacts {
+    color: var(--slate);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-style: normal;
+    display: flex;
+    align-content: flex-start;
+    flex-shrink: 0;
+    padding: 24px 0;
   }
   .section-solution {
     background-image: linear-gradient(
@@ -128,4 +202,25 @@
   .customers-icon-list {
     flex-basis: calc((100% - 120px) / 6);
   }
+
+  .footer-info .container {
+  flex-shrink: 0;
+  display: flex;
+  align-items: baseline;
+}
+.logo-social-media {
+  gap: 120px;
+  padding-left: 0;
+}
+.mail-subscribe {
+  padding-left: 80px;
+  /* gap: 24px; */
+}
+.form-button {
+left: 288px;
+}
+.form-input {
+  min-width: 264px;
+}
+
 }
