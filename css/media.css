@@ -202,7 +202,6 @@
   .customers-icon-list {
     flex-basis: calc((100% - 120px) / 6);
   }
-
   .footer-info .container {
   flex-shrink: 0;
   display: flex;
@@ -214,7 +213,6 @@
 }
 .mail-subscribe {
   padding-left: 80px;
-  /* gap: 24px; */
 }
 .form-button {
 left: 288px;
