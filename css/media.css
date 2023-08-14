@@ -2,6 +2,9 @@
   .container {
     max-width: 426px;
   }
+  .text-solution {
+    font-size: 36px;
+  }
   .social-link-mob {
     flex-basis: calc((100% - 3 * 56px) / 4);
   }
@@ -13,7 +16,6 @@
     min-width: 398px;
   }
 }
-
 @media screen and (min-width: 768px) {
   .container {
     max-width: 766px;
@@ -26,7 +28,22 @@
   }
   .contacts {
     display: flex;
+    padding: 0;
+    margin: 12px 0;
   }
+  .page-link {
+    font-size: 12px;
+    padding: 0;
+    letter-spacing: 0.04em;
+    line-height: 1.17;
+  }
+     .menu-list .page-link {
+        font-size: 16px;
+          font-weight: var(--weight500);
+          line-height: 1.5;
+          letter-spacing: 0.02em;
+          padding: 24px 0;
+     }
   .contacts-list {
     flex-direction: column;
     gap: 12px;
@@ -114,10 +131,8 @@
   .container {
     max-width: 1140px;
   }
-  .logo {
-    margin-right: 76px;
-    margin-top: 24px;
-    margin-bottom: 24px;
+  .page-nav {
+    gap: 76px;
   }
   .menu-list {
     margin-left: 0;
@@ -158,14 +173,19 @@
   .text-solution {
     font-size: 56px;
     line-height: 1.07;
-    padding-bottom: 48px;
+    margin-bottom: 48px;
   }
   .section-features {
-    padding: 120px;
+    align-items: center;
   }
   .title-features {
     font-size: 20px;
     line-height: 1.2;
+    font-weight: 500;
+   text-align: start;
+  }
+  .text-features {
+    font-weight: 400;
   }
   .features-item {
     flex-basis: calc((100% - 3 * 24px) / 4);
@@ -184,13 +204,16 @@
   .section-doing {
     display: flex;
   }
+  .section-team {
+      padding-top: 120px;
+  }
+  .title-team {
+    padding-top: 0;
+  }
   .team-list {
     flex-wrap: nowrap;
     gap: 24px;
     padding-bottom: 120px;
-  }
-  .title-team {
-    padding-top: 120px;
   }
   .title-customers {
     padding-top: 120px;
