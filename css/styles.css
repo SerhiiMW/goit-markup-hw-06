@@ -178,7 +178,6 @@ ul {
   display: flex;
   align-content: flex-start;
   flex-shrink: 0;
-  /* padding: 16px 0; */
   display: none;
 }
 .mob-menu {

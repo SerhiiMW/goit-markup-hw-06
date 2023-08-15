@@ -29,7 +29,7 @@
   .contacts {
     display: flex;
     padding: 0;
-    margin: 12px 0;
+    padding: 16px 0;
   }
   .page-link {
     font-size: 12px;
