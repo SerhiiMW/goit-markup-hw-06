@@ -118,7 +118,8 @@ ul {
   font-weight: var(--weight500);
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding: 24px 0;
+  /* padding: 24px 0; */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .page-link-menu {
   color: var(--ocean);
@@ -148,6 +149,9 @@ ul {
 .contacts .link {
   color: var(--slate);
 }
+.contacts-portfolio .link {
+  color: var(--slate);
+}
 
 .link:hover,
 .link:focus {
@@ -161,6 +165,10 @@ ul {
   font-weight: 400;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.contacts-portfolio .list .link {
+  font-weight: 400;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .contacts {
   color: var(--slate);
   font-size: 12px;
@@ -170,7 +178,7 @@ ul {
   display: flex;
   align-content: flex-start;
   flex-shrink: 0;
-  padding: 16px 0;
+  /* padding: 16px 0; */
   display: none;
 }
 .mob-menu {
@@ -195,6 +203,7 @@ ul {
   cursor: pointer;
   border: none;
   margin-left: 0 auto;
+  padding: 24px 0;
 }
 .menu-close-btn {
   display: block;
@@ -572,7 +581,7 @@ ul {
 }
 
 .form-input {
-  min-width: 290px;
+  width: 290px;
   height: 40px;
   border: 1px solid var(--white);
   background-color: transparent;
@@ -641,13 +650,7 @@ ul {
   align-items: center;
   gap: 40px;
 }
-.contacts-portfolio .link {
-  color: var(--slate);
-}
-.contacts-portfolio .list .link {
-  font-weight: 400;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .contacts-portfolio {
   color: var(--slate);
   font-size: 12px;
@@ -657,7 +660,7 @@ ul {
   display: flex;
   align-content: flex-start;
   flex-shrink: 0;
-  padding: 16px 0;
+  padding: 24px 0;
 }
 .portfolio-contacts-list {
   display: flex;
@@ -725,15 +728,6 @@ ul {
   width: calc((100% - 48px) / 3);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-list .page-link {
-  padding: 0;
-}
-.portfolio-list .page-link:focus,
-.portfolio-list .page-link:hover {
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
 .page-link:focus .make-cover-text {
   transform: translateY(0%);
 }
@@ -771,7 +765,7 @@ ul {
 }
 
 .footer-info-portfolio .container {
-  max-width: 1158px;
+  max-width: 1140px;
   flex-shrink: 0;
   display: flex;
   align-items: baseline;
@@ -865,7 +859,7 @@ ul {
 }
 
 .form-input-portfolio {
-  width: 264px;
+  width: 256px;
   height: 40px;
   border: 1px solid var(--white);
   background-color: transparent;
@@ -902,7 +896,7 @@ ul {
   background-color: var(--iris);
   border: none;
   border-radius: 4px;
-  left: 288px;
+  left: 272px;
   top: 50%;
   transform: translateY(-50%);
 }

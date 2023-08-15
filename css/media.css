@@ -13,7 +13,7 @@
     font-weight: 700;
   }
   .form-input {
-    min-width: 398px;
+    width: 398px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -37,13 +37,13 @@
     letter-spacing: 0.04em;
     line-height: 1.17;
   }
-     .menu-list .page-link {
-        font-size: 16px;
-          font-weight: var(--weight500);
-          line-height: 1.5;
-          letter-spacing: 0.02em;
-          padding: 24px 0;
-     }
+  .menu-list .page-link {
+    font-size: 16px;
+    font-weight: var(--weight500);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+  }
   .contacts-list {
     flex-direction: column;
     gap: 12px;
@@ -100,11 +100,14 @@
   .form-mail {
     position: relative;
   }
+  .form-input {
+    width: 264px;
+  }
   .form-button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 420px;
+    left: 288px;
   }
   .footer-social-media {
     margin: 0;
@@ -120,12 +123,12 @@
     gap: 24px;
     padding-left: 108px;
   }
-.mail-subscribe {
-  padding-left: 108px;
-  margin-top: 112px;
-  padding-bottom: 96px;
-  align-items: start;
-}
+  .mail-subscribe {
+    padding-left: 108px;
+    margin-top: 112px;
+    padding-bottom: 96px;
+    align-items: start;
+  }
 }
 @media screen and (min-width: 1140px) {
   .container {
@@ -141,6 +144,11 @@
     flex-direction: row;
     gap: 40px;
   }
+  .page-link {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+  }
   .contacts {
     color: var(--slate);
     font-size: 16px;
@@ -150,6 +158,7 @@
     display: flex;
     align-content: flex-start;
     flex-shrink: 0;
+    margin: 0;
     padding: 24px 0;
   }
   .section-solution {
@@ -182,7 +191,7 @@
     font-size: 20px;
     line-height: 1.2;
     font-weight: 500;
-   text-align: start;
+    text-align: start;
   }
   .text-features {
     font-weight: 400;
@@ -205,7 +214,7 @@
     display: flex;
   }
   .section-team {
-      padding-top: 120px;
+    padding-top: 120px;
   }
   .title-team {
     padding-top: 0;
@@ -226,22 +235,22 @@
     flex-basis: calc((100% - 120px) / 6);
   }
   .footer-info .container {
-  flex-shrink: 0;
-  display: flex;
-  align-items: baseline;
-}
-.logo-social-media {
-  gap: 120px;
-  padding-left: 0;
-}
-.mail-subscribe {
-  padding-left: 80px;
-}
-.form-button {
-left: 288px;
-}
-.form-input {
-  min-width: 264px;
-}
-
+    flex-shrink: 0;
+    display: flex;
+    align-items: baseline;
+  }
+  .logo-social-media {
+    gap: 120px;
+    padding-left: 0;
+  }
+  .mail-subscribe {
+    padding-left: 80px;
+  }
+  .form-button {
+    left: 272px;
+  }
+  .form-input {
+    width: 256px;
+    opacity: unset;
+  }
 }
